@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #35155C;
+    overflow-x: hidden;
+}
+
+
+.selecioneJogo {
+   padding: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.selecioneJogo h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* margin-bottom: 20px; */
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.jogo {
+    padding: 0 300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.jogo img{
+    cursor: pointer;
+}
+
+
+button {
+    margin: 30px;
+    width: 300px;
+    height: 80px;
+    font-size: 23px;
+    border-radius: 60px;
+    font-weight: bold;
+    border-style: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7E32DB;
+
+}
+
+
+/* Info game */
+
+.areaExplicativa{
+    padding: 40px;
+    margin-top: 15vh;
+    background-color: #170928;
+    border-radius: 30px;
+    display: flex;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.areaExplicativa div{
+    display: flex;
+}
+.areatextual{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.areatextual h4{
+    font-size: 36px;
+    color: #D0A9FF;
+}
+
+.areatextual p{
+    padding: 20px 30px 0 0;
+    font-size: 22px;
+}
+
+.areaExplicativa .area02{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btns #purpleclaro {
+    background-color: #AA7AE6;
+
+}
+
+.btns #purpleescuro {
+    background-color: #35155C;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.btn{
+    width: 25vw;
+}
+
+
+.align-back{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.voltar{
+    /* margin-right: -30px;
+    padding-top: 10px;
+    padding-left: 50px;
+    z-index: 300;
+    float: left;
+    display: block;  */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    /* background-color: aqua; */
+}
+
+.voltar .back{
+    padding: 20px;
+    width: 50px; 
+}
+
+
+#select{
+    border: #AA7AE6 4px solid;
+    border-radius: 30px;
+}
+
+
+
+.btns button {
+    margin: 20px;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+}
+
+.tutorial .btns button{
+    margin: 30px auto;
+}
+
+ .sobre .descricaoDeProjeto{
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1528px) {
+    .selecioneJogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+   .selecioneJogo .area{
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .selecioneJogo h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+    }
+   
+    
+}
+
+@media screen and (max-width: 991px) {
+    .selecioneJogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+   .selecioneJogo .area{
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .areaExplicativa{
+        flex-direction: column;
+        padding: 50px;
+        margin-top: 15vh;
+        background-color: #170928;
+        border-radius: 30px;
+        display: flex;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .areaExplicativa .jogoSelecionado{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
+    
+}
