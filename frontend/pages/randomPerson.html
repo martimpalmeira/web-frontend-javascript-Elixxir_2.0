@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
+    <title>Gerador de personagem</title>
     <link rel="stylesheet" href="../css/StyleRandom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,52 +19,104 @@
             <a href="infoGame.html"><img class="back" src="../img/back.png" alt=""></a>
         </div>
     </div>
-    <div class="selectionText">
-        <h1>Seu avatar em Dungeons and Dragons</h1>
-        <p class="pontDisponivel">PONTUACAO DISPONIVEL : <span id="pontDisponivel"></span></p>
-        <p class="pontMaxima">Pontuação Maxima = 100</p>
+
+    <h1>Seu avatar em Dungeons and Dragons</h1>
+
+    <div id="raca">
+        <p class="bold"><b>Raça:</b> <span>Humano</span></p>
+        <img id="humano" src="../img/humano.png" alt="">
+        <img id="elfo" src="../img/elfo.png" alt="">
+        <img id="anao" src="../img/anao.png" alt="">
+        <img id="orc" src="../img/orc.png" alt="">
+        <img id="gnomo" src="../img/gnomo.png" alt="">
     </div>
-    <div class="slideSection">
-        <div id="slidecontainer">
-            <div id="atributos">
-            <p class="atribute">Força: <span id="forValue"></span></p>
-            <input type="range" min="0" max="20" id="forRange" class="slider" from-max="15">
-
-            <p class="atribute">Destreza: <span id="desValue"></span></p>
-            <input type="range" min="0" max="20" id="desRange" class="slider">
-
-            <p class="atribute">Sabedoria: <span id="sabValue"></span></p>
-            <input type="range" min="0" max="20" id="sabRange" class="slider">
-
-            <p class="atribute">Inteligência: <span id="inteValue"></span></p>
-            <input type="range" min="0" max="20" id="inteRange" class="slider">
-
-            <p class="atribute">Carisma: <span id="carValue"></span></p>
-            <input type="range" min="0" max="20" id="carRange" class="slider">
-
-            <p class="atribute">Constituição: <span id="conValue"></span></p>
-            <input type="range" min="0" max="20" id="conRange" class="slider">
-
-            <p class="atribute">Percepção: <span id="perValue"></span></p>
-            <input type="range" min="0" max="20" id="perRange" class="slider">
-
-            <p class="atribute">Sorte: <span id="sorValue"></span></p>
-            <input type="range" min="0" max="20" id="sorRange" class="slider">
-
-            <p class="atribute">Agilidade: <span id="agiValue"></span></p>
-            <input type="range" min="0" max="20" id="agiRange" class="slider">
-
-            <p class="atribute">Intuição: <span id="intuValue"></span></p>
-            <input type="range" min="0" max="20" id="intuRange" class="slider">
+    <div class="centra-top">
+        <div class="top">
+            <div class="top-left">
+                <p class="bold"><b>Sexo:</b></p>
+                <img id="masculino" src="../img/sexo-masculino.png">
+                <img id="feminino" src="../img/sexo-feminino.png">
             </div>
-            
+            <div class="top-right">
+                <p class="bold"><b>Classe:</b></p>
+                <img id="arco" src="../img/arqueiro.png" alt="">
+                <img id="espada" src="../img/paladino.png" alt="">
+                <img id="machado" src="../img/barbaro.png" alt="">
+                <img id="mago" src="../img/mago.png" alt="">
+                <img id="punhal" src="../img/assassino.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="centra-bot">
+        <div class="bot">
+            <div class="bot-left">
+                <p class="bold"><b>Cidade:</b></p>
+                <select name="cidades">
+                    <option value="Venel">Venel</option>
+                    <option value="Eullenay">Eullenay</option>
+                    <option value="Siamor">Siamor</option>
+                    <option value="Mavinóri">Mavinóri</option>
+                    <option value="Delanor">Delanor</option>
+
+                </select>
+            </div>
+            <p class="bold"><b>Level:</b><span>48</span></p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="slideSection">
+
+        <div id="slidecontainer">
+            <center>
+                <p class="pontDisponivel">PONTUACAO DISPONIVEL : <span id="pontDisponivel"></span></p>
+            </center>
+            <center>
+                <p class="pontMaxima">Pontuação Maxima = 100</p>
+            </center>
+            <div id="atributos">
+                <p class="atribute">Força: <span id="forValue"></span></p>
+                <input type="range" min="0" max="20" id="forRange" class="slider" from-max="15">
+
+                <p class="atribute">Destreza: <span id="desValue"></span></p>
+                <input type="range" min="0" max="20" id="desRange" class="slider">
+
+                <p class="atribute">Sabedoria: <span id="sabValue"></span></p>
+                <input type="range" min="0" max="20" id="sabRange" class="slider">
+
+                <p class="atribute">Inteligência: <span id="inteValue"></span></p>
+                <input type="range" min="0" max="20" id="inteRange" class="slider">
+
+                <p class="atribute">Carisma: <span id="carValue"></span></p>
+                <input type="range" min="0" max="20" id="carRange" class="slider">
+
+                <p class="atribute">Constituição: <span id="conValue"></span></p>
+                <input type="range" min="0" max="20" id="conRange" class="slider">
+
+                <p class="atribute">Percepção: <span id="perValue"></span></p>
+                <input type="range" min="0" max="20" id="perRange" class="slider">
+
+                <p class="atribute">Sorte: <span id="sorValue"></span></p>
+                <input type="range" min="0" max="20" id="sorRange" class="slider">
+
+                <p class="atribute">Agilidade: <span id="agiValue"></span></p>
+                <input type="range" min="0" max="20" id="agiRange" class="slider">
+
+                <p class="atribute">Intuição: <span id="intuValue"></span></p>
+                <input type="range" min="0" max="20" id="intuRange" class="slider">
+            </div>
+
             <div class="btns-section">
                 <div class="botoes">
                     <a href="#"><button type="button" onclick="gerarPdf()" id="salvar" disabled>SALVAR</button></a>
-                    <a href="#"><button type="button" onclick="gerarAtributos()" id="gerarOutro">GERAR OUTRO</button></a>
+                    <a href="#"><button type="button" onclick="gerarAtributos()" id="gerarOutro">GERAR
+                            OUTRO</button></a>
                 </div>
             </div>
-            
+
 
         </div>
     </div>

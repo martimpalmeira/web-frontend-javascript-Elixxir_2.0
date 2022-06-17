@@ -10,7 +10,118 @@ body{
 
 h1{
     font-size: 50px;
+    text-align: center;
 }
+
+.bold{
+    
+    font-size: 25px;
+}
+
+#raca{
+    text-align: center;
+}
+
+#raca img{
+    margin-right: 15px;
+    box-shadow: 2px 2px 5px white;
+    border-radius: 5px;
+}
+
+#elfo{
+    opacity: 0.2;    
+}
+
+#anao{
+    opacity: 0.2;
+}
+
+#orc{
+    opacity: 0.2;
+}
+
+#gnomo{
+    opacity: 0.2;
+}
+
+.perfilAvatar{
+    
+}
+
+.centra-top{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.top{
+    display: flex;
+    margin-top: 30px;
+}
+
+.top-left{
+   padding-right: 200px;
+    
+}
+
+#feminino{
+    opacity: 0.2;
+}
+
+#arco{
+    opacity: 0.2;
+}
+
+#machado{
+    opacity: 0.2;
+}
+
+#mago{
+    opacity: 0.2;
+}
+
+#punhal{
+    opacity: 0.2;
+}
+
+.centra-bot{
+    display: flex;
+    justify-content: center;
+}
+
+.bot{
+   display: flex;
+   margin-left: -70px;
+   margin-top: 30px;
+}
+
+.bot-left{
+    padding-right: 100px;
+    display: flex;
+   
+}
+
+select{
+    height: 25px;
+    margin-top: 30px;
+   margin-left: 10px;
+   background-color:#1F0D36;
+   border-radius: 5px;
+   border: solid 2px #ffffff ;
+   text-align: center;
+   color: #ffffff;
+   box-shadow: 1px 1px 5px white;
+   font-size: 18px;
+   
+   
+}
+
+
+
+
+
+
 
 .pontDisponivel{
     font-size: 30px;
