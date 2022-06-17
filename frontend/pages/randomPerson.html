@@ -23,7 +23,7 @@
     <h1>Seu avatar em Dungeons and Dragons</h1>
 
     <div id="raca">
-        <p class="bold"><b>Raça:</b> <span>Humano</span></p>
+        <p class="bold"><b>Raça:</b> <span id="tipoRaca">Humano</span></p>
         <img id="humano" src="../img/humano.png" alt="">
         <img id="elfo" src="../img/elfo.png" alt="">
         <img id="anao" src="../img/anao.png" alt="">
@@ -51,7 +51,7 @@
         <div class="bot">
             <div class="bot-left">
                 <p class="bold"><b>Cidade:</b></p>
-                <select name="cidades">
+                <select name="cidades" id="teste">
                     <option value="Venel">Venel</option>
                     <option value="Eullenay">Eullenay</option>
                     <option value="Siamor">Siamor</option>
@@ -60,9 +60,10 @@
 
                 </select>
             </div>
-            <p class="bold"><b>Level:</b><span>48</span></p>
+            <p class="bold"><b>Level:</b><span id="xp"></span></p>
         </div>
     </div>
+
 
 
 
@@ -120,6 +121,7 @@
 
         </div>
     </div>
+
 </body>
 <script src="../js/sliders.js"></script>
 <script src="../js/script.js"></script>

@@ -22,11 +22,265 @@ n10 = 0
 
 var botao = document.getElementById("salvar")
 
+var humano = document.getElementById("humano")
 
-    
+var elfo = document.getElementById("elfo")
+
+var anao = document.getElementById("anao")
+
+var orc = document.getElementById("orc")
+
+var gnomo = document.getElementById("gnomo")
+
+var raca = document.getElementById("tipoRaca")
+
+var arco = document.getElementById("arco")
+
+var espada = document.getElementById("espada")
+
+var machado = document.getElementById("machado")
+
+var mago = document.getElementById("mago")
+
+var punhal = document.getElementById("punhal")
+
+var xp = document.getElementById("xp")
+
+
+
+var masc = document.getElementById("masculino")
+
+var fem = document.getElementById("feminino")
+
+
+racas = [humano, elfo, anao, orc, gnomo]
+
+
+indice = Math.floor(Math.random() * 5);
+
+xpRandom = Math.floor(Math.random() * 1400);
+
+xp.innerHTML = (" " + xpRandom + " XP")
+
+arco.style.opacity = 0.2
+espada.style.opacity = 0.2
+machado.style.opacity = 0.2
+mago.style.opacity = 0.2
+punhal.style.opacity = 0.2
+
+if (indice == 0) {
+    raca.innerHTML = "Humano"
+} else if (indice == 1) {
+    raca.innerHTML = "Elfo"
+} else if (indice == 2) {
+    raca.innerHTML = "Anão"
+} else if (indice == 3) {
+    raca.innerHTML = "Orc"
+} else {
+    raca.innerHTML = "Gnomo"
+}
+
+t = document.getElementById("teste")
+
+cidades = ["Eullenay", "Siamor", "Venel", "Mavinóri", "Delanor"]
+
+randomCid = Math.floor(Math.random() * 5);
+
+t.value = cidades[randomCid]
+
+function selectElfo() {
+    humano.style.opacity = 0.2
+    elfo.style.opacity = 1.0
+    anao.style.opacity = 0.2
+    orc.style.opacity = 0.2
+    gnomo.style.opacity = 0.2
+    raca.innerHTML = "Elfo"
+}
+
+function selectHumano() {
+    humano.style.opacity = 1.0
+    elfo.style.opacity = 0.2
+    anao.style.opacity = 0.2
+    orc.style.opacity = 0.2
+    gnomo.style.opacity = 0.2
+    raca.innerHTML = "Humano"
+}
+
+function selectAnao() {
+    humano.style.opacity = 0.2
+    elfo.style.opacity = 0.2
+    anao.style.opacity = 1.0
+    orc.style.opacity = 0.2
+    gnomo.style.opacity = 0.2
+    raca.innerHTML = "Anão"
+}
+
+function selectOrc() {
+    humano.style.opacity = 0.2
+    elfo.style.opacity = 0.2
+    anao.style.opacity = 0.2
+    orc.style.opacity = 1.0
+    gnomo.style.opacity = 0.2
+    raca.innerHTML = "Orc"
+}
+
+function selectGnomo() {
+    humano.style.opacity = 0.2
+    elfo.style.opacity = 0.2
+    anao.style.opacity = 0.2
+    orc.style.opacity = 0.2
+    gnomo.style.opacity = 1.0
+    raca.innerHTML = "Gnomo"
+}
+
+function selectArco(){
+    arco.style.opacity = 1.0
+    espada.style.opacity = 0.2
+    machado.style.opacity = 0.2
+    mago.style.opacity = 0.2
+    punhal.style.opacity = 0.2
+}
+
+function selectEspada(){
+    arco.style.opacity = 0.2
+    espada.style.opacity = 1.0
+    machado.style.opacity = 0.2
+    mago.style.opacity = 0.2
+    punhal.style.opacity = 0.2
+}
+
+function selectMachado(){
+    arco.style.opacity = 0.2
+    espada.style.opacity = 0.2
+    machado.style.opacity = 1.0
+    mago.style.opacity = 0.2
+    punhal.style.opacity = 0.2
+}
+
+function selectMago(){
+    arco.style.opacity = 0.2
+    espada.style.opacity = 0.2
+    machado.style.opacity = 0.2
+    mago.style.opacity = 1.0
+    punhal.style.opacity = 0.2
+}
+
+function selectPunhal(){
+    arco.style.opacity = 0.2
+    espada.style.opacity = 0.2
+    machado.style.opacity = 0.2
+    mago.style.opacity = 0.2
+    punhal.style.opacity = 1.0
+}
+
+function selectMasc(){
+    masc.style.opacity = 1.0
+    fem.style.opacity = 0.2
+}
+
+function selectFem(){
+    masc.style.opacity = 0.2
+    fem.style.opacity = 1.0
+}
+
+document.getElementById("elfo").addEventListener("click", selectElfo);
+
+document.getElementById("humano").addEventListener("click", selectHumano);
+
+document.getElementById("anao").addEventListener("click", selectAnao);
+
+document.getElementById("orc").addEventListener("click", selectOrc);
+
+document.getElementById("gnomo").addEventListener("click", selectGnomo);
+
+
+
+
+
+document.getElementById("arco").addEventListener("click", selectArco);
+
+document.getElementById("espada").addEventListener("click", selectEspada);
+
+document.getElementById("machado").addEventListener("click", selectMachado);
+
+document.getElementById("mago").addEventListener("click", selectMago);
+
+document.getElementById("punhal").addEventListener("click", selectPunhal);
+
+
+
+document.getElementById("masculino").addEventListener("click", selectMasc);
+
+document.getElementById("feminino").addEventListener("click", selectFem);
+
 
 
 function gerarAtributos() {
+
+    randomCid = Math.floor(Math.random() * 5);
+
+    t.value = cidades[randomCid]
+
+    xpRandom = Math.floor(Math.random() * 1400);
+
+
+    xp.innerHTML = (" " + xpRandom + " XP")
+
+    humano.style.opacity = 0.2
+    elfo.style.opacity = 0.2
+    anao.style.opacity = 0.2
+    orc.style.opacity = 0.2
+    gnomo.style.opacity = 0.2
+
+    arco.style.opacity = 0.2
+    espada.style.opacity = 0.2
+    machado.style.opacity = 0.2
+    mago.style.opacity = 0.2
+    punhal.style.opacity = 0.2
+
+    for (i = 0; i < racas.length; i++) {
+        indice = Math.floor(Math.random() * 5);
+        if (indice == 0) {
+            raca.innerHTML = "Humano"
+            espada.style.opacity = 1.0
+            machado.style.opacity = 0.2
+            mago.style.opacity = 0.2
+            punhal.style.opacity = 0.2
+            arco.style.opacity = 0.2
+        } else if (indice == 1) {
+            raca.innerHTML = "Elfo"
+            arco.style.opacity = 1.0
+            espada.style.opacity = 0.2
+            machado.style.opacity = 0.2
+            mago.style.opacity = 0.2
+            punhal.style.opacity = 0.2
+        } else if (indice == 2) {
+            raca.innerHTML = "Anão"
+            punhal.style.opacity = 1.0
+            arco.style.opacity = 0.2
+            espada.style.opacity = 0.2
+            machado.style.opacity = 0.2
+            mago.style.opacity = 0.2
+        } else if (indice == 3) {
+            raca.innerHTML = "Orc"
+            machado.style.opacity = 1.0
+            punhal.style.opacity = 0.2
+            arco.style.opacity = 0.2
+            espada.style.opacity = 0.2
+            mago.style.opacity = 0.2
+        } else {
+            raca.innerHTML = "Gnomo"
+            mago.style.opacity = 1.0
+            machado.style.opacity = 0.2
+            punhal.style.opacity = 0.2
+            arco.style.opacity = 0.2
+            espada.style.opacity = 0.2
+        }
+    }
+
+
+
+    racas[indice].style.opacity = 1
 
     botao.disabled = false;
 
@@ -47,7 +301,7 @@ function gerarAtributos() {
     slider1.value = valores[0];
     var x = slider1.value;
 
-    
+
 
     var color = `linear-gradient(90deg, rgb(47,25,95) ${x * 5}%, rgb(202, 178, 232) ${x * 5}%)`;
     slider1.style.background = color;
@@ -67,11 +321,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
 
     }
@@ -102,11 +356,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
 
 
@@ -136,11 +390,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
     }
 
@@ -168,11 +422,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
     }
 
@@ -200,11 +454,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
     }
 
@@ -232,11 +486,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
     }
 
@@ -264,11 +518,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-       
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
     }
 
@@ -296,11 +550,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
     }
 
@@ -328,11 +582,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
     }
 
@@ -360,11 +614,11 @@ function gerarAtributos() {
         pontDisp.value = v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10
         pontDisp.innerHTML = pontDisp.value
 
-        
-        if(pontDisp.value>=0){
-            botao.disabled=false
-        }else{
-            botao.disabled=true;
+
+        if (pontDisp.value >= 0) {
+            botao.disabled = false
+        } else {
+            botao.disabled = true;
         }
     }
 
