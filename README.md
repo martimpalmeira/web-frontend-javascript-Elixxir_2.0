@@ -7,3 +7,6 @@
 | <a href="https://github.com/RicMerces"> Fernando Lira </a>  |  <a href="https://github.com/martimpalmeira"> Martim Palmeira </a>   |   <a href="https://github.com/LuizGSSantana"> Yuri dos Santos </a> 
 | Project manager |  Developer |   Tester 
 
+
+Link Deploy: https://martimpalmeira.github.io/Elixxir_2.0/index.html
+
