@@ -8,5 +8,5 @@
 | Project manager |  Developer |   Tester 
 
 
-Link Deploy: https://martimpalmeira.github.io/Elixxir_2.0/index.html
+Link Deploy: https://martimpalmeira.github.io/web-frontend-javascript-Elixxir_2.0/
 
